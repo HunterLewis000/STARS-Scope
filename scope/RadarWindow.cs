@@ -2706,7 +2706,7 @@ namespace DGScope
             else
                 PreviewArea.Text = GeneratePreviewString(Preview);
             PreviewArea.ForceRedraw();
-            PreviewArea.ForeColor = AdjustedColor(DataBlockColor, CurrentPrefSet.Brightness.FullDataBlocks);
+            PreviewArea.ForeColor = AdjustedColor(Color.FromArgb(37, 153, 37), CurrentPrefSet.Brightness.FullDataBlocks);
             PreviewArea.LocationF = new PointF(PreviewLocation.X, PreviewLocation.Y - PreviewArea.SizeF.Height);
             DrawLabel(PreviewArea);
         }
@@ -2721,7 +2721,7 @@ namespace DGScope
         }
         private void RenderStatus()
         {
-            StatusArea.ForeColor = AdjustedColor(DataBlockColor, CurrentPrefSet.Brightness.Lists);
+            StatusArea.ForeColor = AdjustedColor(Color.FromArgb(37, 153, 37), CurrentPrefSet.Brightness.Lists);
             StatusArea.Font = Font;
             var oldtext = StatusArea.Text;
             var timesyncind = timesync.Synchronized ? " " : "*";
