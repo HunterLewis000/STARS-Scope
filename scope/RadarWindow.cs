@@ -634,10 +634,10 @@ namespace DGScope
         [DisplayName("DCB Font")]
         [XmlIgnore]
         public Font DCBFont { get => dcb.Font; set => dcb.Font = value; }
-        [XmlElement("DBCFontName")]
+        [XmlElement("DCBFontName")]
         [Browsable(false)]
         public string DCBFontName { get { return DCBFont.FontFamily.Name; } set { DCBFont = new Font(value, DCBFont.Size, DCBFont.Unit); } }
-        [XmlElement("DBCFontSize")]
+        [XmlElement("DCBFontSize")]
         [Browsable(false)]
         public int DCBFontSize { get { return (int)DCBFont.Size; } set { DCBFont = new Font(DCBFont.FontFamily, value, DCBFont.Unit); } }
         [XmlElement("DCBFontSizeUnit")]
