@@ -9,7 +9,7 @@ namespace DGScope
 {
     internal class DCBButton : DCBMenuItem
     {
-        int bordersize = 3;
+        int bordersize = 2;
         Rectangle internalrectangle;
         bool drawnvertically = false;
         bool drawnhorizontally = false;
@@ -68,7 +68,7 @@ namespace DGScope
             GL.Translate(Left, Top, 0);
 
             GL.Begin(PrimitiveType.Polygon);
-            GL.Color4(!drawactive ? RadarWindow.AdjustedColor(Color.DarkGray, brightness) : Color.Black);
+            GL.Color4(!drawactive ? RadarWindow.AdjustedColor(Color.FromArgb(85, 85, 85), brightness) : Color.Black);
             GL.Vertex2(0, 0);
             GL.Vertex2(width, 0);
             GL.Vertex2(width - bordersize, bordersize);
@@ -78,7 +78,7 @@ namespace DGScope
             GL.End();
 
             GL.Begin(PrimitiveType.Polygon);
-            GL.Color4(drawactive ? RadarWindow.AdjustedColor(Color.DarkGray, brightness) : Color.Black);
+            GL.Color4(drawactive ? RadarWindow.AdjustedColor(Color.FromArgb(85, 85, 85), brightness) : Color.Black);
             GL.Vertex2(width, height);
             GL.Vertex2(width, 0);
             GL.Vertex2(width - bordersize, bordersize);

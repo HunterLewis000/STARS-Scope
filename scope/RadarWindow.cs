@@ -73,7 +73,7 @@ namespace DGScope
         public Color BeaconTargetColor { get; set; } = Color.FromArgb(0, 255, 0);
         [XmlIgnore]
         [DisplayName("FDB Color"), Description("Color of aircraft full data blocks"), Category("Colors")]
-        public Color DataBlockColor { get; set; } = Color.Lime;
+        public Color DataBlockColor { get; set; } = Color.FromArgb(37, 153, 37);
         [XmlIgnore]
         [DisplayName("Pointout Color"), Description("Color of aircraft data blocks in pointout status"), Category("Colors")]
         public Color PointoutColor { get; set; } = Color.Yellow;
@@ -82,7 +82,7 @@ namespace DGScope
         public Color OwnedColor { get; set; } = Color.White;
         [XmlIgnore]
         [DisplayName("LDB Color"), Description("Color of aircraft limited data blocks"), Category("Colors")]
-        public Color LDBColor { get; set; } = Color.Lime;
+        public Color LDBColor { get; set; } = Color.FromArgb(50, 205, 50);
         [XmlIgnore]
         [DisplayName("Selected Data Block Color"), Description("Color of aircraft limited data blocks"), Category("Colors")]
         public Color SelectedColor { get; set; } = Color.FromArgb(0, 255, 255);
