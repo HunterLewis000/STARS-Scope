@@ -21,11 +21,11 @@ namespace DGScope
 
         public event EventHandler Click;
         public bool Active { get; set; }
-        public Color BackColorActive { get; set; } = Color.Green;
-        public Color BackColorInactive { get; set; } = Color.FromArgb(0, 80, 0);
+        public Color BackColorActive { get; set; } = Color.FromArgb(0, 78, 0);
+        public Color BackColorInactive { get; set; } = Color.FromArgb(0, 44, 0);
         public Color BackColorDisabled { get; set; } = Color.FromArgb(0, 40, 0);
         public Color ForeColor { get; set; } = Color.White;
-        public Color ForeColorDwell { get; set; } = Color.Yellow;
+        public Color ForeColorDwell { get; set; } = Color.FromArgb(255, 255, 153);
         public Color ForeColorDisabled { get; set; } = Color.DarkGray;
         public override Font Font { get; set; }
         public StringFormat StringFormat { get; set; } = new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center, FormatFlags = StringFormatFlags.NoWrap | StringFormatFlags.NoClip };

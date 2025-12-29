@@ -3716,8 +3716,8 @@ namespace DGScope
                 if (Nexrad.LevelsAvailable == null || Nexrad.LevelsAvailable.Length <= i)
                     break;
                 dcbWxButton[i].Text = Nexrad.LevelsAvailable[i] ? "WX" + (i + 1) + "\r\nAVL" : "WX" + (i + 1) + "\r\n ";
-                dcbWxButton[i].BackColorActive = Nexrad.LevelsAvailable[i] ? Color.SlateBlue : Color.Green;
-                dcbWxButton[i].BackColorInactive = Nexrad.LevelsAvailable[i] ? Color.DarkSlateBlue : Color.FromArgb(0, 80, 0);
+                dcbWxButton[i].BackColorActive = Nexrad.LevelsAvailable[i] ? Color.FromArgb(70, 70, 100) : Color.FromArgb(0, 78, 0);
+                dcbWxButton[i].BackColorInactive = Nexrad.LevelsAvailable[i] ? Color.FromArgb(51, 34, 100) : Color.FromArgb(0, 44, 0);
             }
             dcbLdrDirButton.Text = "LDR DIR\r\n" + CurrentPrefSet.OwnedDataBlockPosition;
             dcbLdrLenButton.Text = "LDR LEN\r\n" + CurrentPrefSet.LeaderLength;

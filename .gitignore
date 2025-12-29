@@ -348,3 +348,5 @@ healthchecksdb
 *imgui.ini
 /NexradDecoder/*.dll
 /NexradDecoder/ICSharpCode.SharpZipLib.dll
+.vscode/settings.json
+nuget.exe
